@@ -1,5 +1,4 @@
-!*.tex
-!*.pdf
-!*.jpg
-!*.png
-
+*.zip
+*.log
+*.out
+*.Backup*
