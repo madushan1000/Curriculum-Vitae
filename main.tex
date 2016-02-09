@@ -51,7 +51,7 @@
 \email{j.l.madushan@gmail.com}
 %%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %%\extrainfo{additional information}
-%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %%\quote{"A witty and playful quotation" - John Smith}
 
 %----------------------------------------------------------------------------------------
@@ -67,7 +67,7 @@
 \cvitem{Linkedin}{\href{http://www.linkedin.com/pub/madushan-nishantha/82/560/578}{www.linkedin.com/pub/madushan-nishantha/82/560/578}}
 
 \section{About Me}
-\cvitem{}{I'm a technology enthusiasts who always seeks for new and interesting technological advancements in Computer Science and Engineering which lets me to get in touch with new technologies as soon as they are available. \newline I love working with teams of other people and I can always adapt to the surrounding environment at ease. \newline My career goal is to work in the embedded systems development sector or Operating Systems research sector which I think will take the best out of me even though I also have experiences in Mobile and Computer software development.}
+\cvitem{}{I'm a technology enthusiasts who always seeks for new and interesting technological advancements in Computer Science and Engineering which lets me to get in touch with new technologies as soon as they are available. \newline I love working with teams of other people and I can always adapt to the surrounding environment at ease. \newline My career goal is to work in the cyber security sector which I think will take the best out of me. I also have experiences in Mobile and Computer software development.}
 
 %----------------------------------------------------------------------------------------
 %       EDUCATION SECTION
@@ -76,7 +76,7 @@
 \section{Education}
 
 \cventry{2011--Now}{Bachelor of Engineering (B.Sc.)}{University of Peradeniya}{}{}{Computer Engineering, Undergraduate}  % Arguments not required can be left empty
-\cventry{2002--2010}{Graduate School}{Sivali Central Collage}{Ratnapura}{}{Specialized in Science (Mathematics)}
+\cventry{2002--2010}{High School}{Sivali Central Collage}{Ratnapura}{}{Specialized in Science (Mathematics)}
 
 %\section{Masters Thesis}
 
@@ -131,17 +131,22 @@
 \cvitem{2010}{Bronze Medal -- Sri Lankan Physics Olympiad}
 \cvitem{}{}
 \cvitem{}{}
+\section{Internships}
+
+\cvitem{10/2014--03/2015}{Short term technical training at Atrenta Lanka (PVT) LTD -- Software Engineering Intern}
 
 \section{Technical  skills}
-\cvitem{Advanced}{GNU/linux, Microsoft Windows, Android, FirefoxOS}
-\cvitem{}{Network Programming (wsgi, C)}
-\cvitem{}{Version Control Systems (git, cvs, svn, Mercurial)}
-\cvitem{}{Content Management Systems (Wordpress, Drupal, Joomla)}
+\cvitem{Advanced}{UNIX, Microsoft Windows, Android, FirefoxOS}
+%\cvitem{}{Network Programming (wsgi, C)}
+\cvitem{}{Version Controlling (git, cvs, svn, Mercurial)}
+%\cvitem{}{Content Management Systems (Wordpress, Drupal, Joomla)}
 \cvitem{}{Cloud infrastructures (OpenShift PAAS, IBM SmartCloud, Google AppEngine) }
-\cvitem{}{NetBeans, Eclipse, Code::Blocks, Microsoft Visual Studio}
+%\cvitem{}{NetBeans, Eclipse, Code::Blocks, Microsoft Visual Studio}
+\cvitem{}{Software Defined Networking}
+
 \cvitem{Intermediate}{Raspberry Pi, Arduino, FPGA}
 \cvitem{}{FreeBSD, Ubuntu Touch, Jolla Sailfish}
-\cvitem{}{\LaTeX, OpenOffice, MsOffice}
+\cvitem{}{\LaTeX, MS Office}
 
 %----------------------------------------------------------------------------------------
 %       Programming SKILLS SECTION
@@ -150,9 +155,9 @@
 \section{Programming skills}
 
 %\cvitem{Advanced}{\textsc{C/C++}, \texttt{java},  \textsc{C\#.NET}, \textsc{python}, \textsc{matlab}, \textsc{vhdl}, \textsc{shell}, \textsc{html}}
-\cvitem{Advanced}{C/C++, JavaSE, JavaME, C\#.NET, Python, MATLAB, VHDL, Shell, HTML}
+\cvitem{Advanced}{C/C++, Qt, Java, JavaME, Python, MATLAB, VHDL, Verilog, Shell}
 %\cvitem{Intermediate}{\textsc{haskell}, \textsc{php}, \textsc{javascript}, \textsc{html5}, \textsc{css}, \textsc{mysql}, \textsc{perl}, \textsc{ruby}, \textsc{awk}}
-\cvitem{Intermediate}{Haskell, PHP, Node.js, JavaScript, Action Script, BASIC, HTML5, CSS, MySql, Perl, Ruby, awk, BrainF, ARM assembly, MIPS assembly, x86 assembly}
+\cvitem{Intermediate}{Haskell, Common Lisp, Node.js, Meteor.js, Antlr, Android, MySql, Perl, Ruby, BrainF, ARM, MIPS, x86 Assembly}
 
 %\section{Educational Skills}
 
@@ -185,52 +190,42 @@
 
 \section{Projects}
 
-\subsection{Seven Segment Display Decoder for hexadecimal numbers -- FPGA}
-\cvitem{}{ Designing and implementing a decoder for displaying hexadecimal numbers in seven segment displays using modelsim Altera suit, VHDL and Altera DE2 development board with Cyclone -- II FPGA. }
-
-\subsection{4bit ALU -- FPGA }
-\cvitem{}{Designing and implementing a 4bit ALU from scratch using modelsim/VHDL and test it using modelsim simulations and the Altera DE2 development board.}
-
-\section{Projects}
 \subsection{Android Custom Rom }
-\cvitem{}{Building an Android Custom Rom (Custom Android version) for HTC Desire HD mobile phone directly from AOSP ( Android Open Source Project).\newline
-The process of porting a new version of Android (4.2.2 JellyBean in this case) to a legacy hardware platform consist of several steps like picking the right source trees from various git and some other kinds of source repositories, picking the right Linux drivers (kernel modules) from the hardware venders, initialize and configure the local android build system with the sources and drivers chosen above according to device specification, downloading the sources using android build system, building android from source, debugging the build on real hardware, fixing the bugs and rebuild until a usable stability is reached.
-\newline
-The process of building Android itself gives a great deal of understanding about Android build system, version control systems like git, Linux internals and the hardware platform.}
+\cvitem{}{Building a custom JellyBean Android version for HTC Desire HD mobile phone from Android Open Source Project, selecting and modifying different components of android internals to support legacy hardware and debugging them, learning how to use the android build system, android source management and Linux internals in the process.}
 
 \subsection{Porting FirefoxOS (B2G) to a new hardware platform}
-\cvitem{}{Porting FirefoxOS, otherwise known as Boot to Gecko (B2G) to HTC Desire HD hardware includes most of the android porting steps and additionally includes the process of building customized gecko version optimized mobile phones and touch screens on top of the Android sources. Then a custom kernel optimized for \newline FirefoxOS should be built and the build should be debugged on real hardware until a usable stability is reached.
-}
+\cvitem{}{Porting FirefoxOS, Boot to Gecko (B2G), to HTC Desire HD smartphone platform, hacking on B2G sources with the knowledge gained from previous Android Custom Rom experiences.}
 
 \subsection{User level thread library -- C}
-\cvitem{}{Designing and implementing of context switching library for user level C programmes which requires the basic knowledge about synchronization, process scheduling algorithms, x86 hardware architecture assembly and C calling conventions for x86.}
+\cvitem{}{Designing and implementing of context switching library for user level C programs, exploiting the knowledge of synchronization, process scheduling, x86 hardware architecture, assembly and C calling conventions for x86.}
 
 \subsection{Virtual Memory Management System -- OS161}
-\cvitem{}{Designing and implementing a Virtual Memory Management System for educational operating system OS161 requires the knowledge about basic virtual memory concepts like paging, page tables, swapping and also the knowledge about synchronization primitives and basic hardware knowledge about how the physical memory (RAM, ROM) works. 
-\newline
-This also gives the confidence to work with large code bases (over 8000 loc) and lot of understanding about low level C coding and UNIX internals.  }
+\cvitem{}{Designing and implementing a Virtual Memory Management System for educational operating system OS161 making use of the knowledge about basic virtual memory concepts such as paging, swapping, knowledge about synchronization and how the physical memory works.}
 
 \subsection{Contributing to Firefox for Android -- fenek}
-\cvitem{}{Fixing the bug ID 948896 on Mozilla Bugzilla which finally committed to the mozillla-central source tree as \href{http://goo.gl/wXlQa1}{rev 2cc946bb55c4}}
+\cvitem{}{Fixing the bug ID 948896 on Mozilla Bugzilla which is committed to the mozillla-central source tree as \href{http://goo.gl/wXlQa1}{rev 2cc946bb55c4}}
 
-\subsection{Car park management system -- Java}
-\cvitem{}{Car park management system which lets the user to mange a car park with full fledged GUI which uses MySQL as the database system.}
+\subsection{Seven Segment Display Decoder for hexadecimal numbers -- FPGA}
+\cvitem{}{ Designing and implementing a decoder for displaying hexadecimal numbers in seven segment displays on Altera DE2 FPGA development board using VHDL.}
 
-\section{Projects}
+\subsection{4bit ALU -- FPGA }
+\cvitem{}{Designing and implementing a 4bit ALU on Altera DE2 development board using VHDL.}
+
+
 \subsection{OCR based chemical reaction solver -- Android}
-\cvitem{}{An android mobile application which uses Google's tesseract OCR engine to identify a chemical reaction printed on a paper and return the result.}
+\cvitem{}{An android application which uses Google's tesseract OCR engine to identify chemical reactions printed on paper and return the reaction result.}
 
-\subsection{HTML Tag Cloud Generator -- C}
-\cvitem{}{UNIX based HTML Tag Cloud generator which takes advantage of UNIX multiprocessing architecture and syscalls to speed up the processing of a large number of HTML files concurrently.}
+\subsection{Tag Cloud Generator -- C}
+\cvitem{}{UNIX based HTML Tag Cloud generator which takes advantage of UNIX multiprocessing architecture to speed up the processing of a large number of HTML files concurrently.}
 
 \subsection{Automated Timetable -- Android}
-\cvitem {}{Automated android timetable which synchronize across multiple people and devices with the help of the Google calender API and PhoneGap to keep in track with academic timetable changes and updates, notices, etc...}
-
-\subsection{Online Fashion Store -- PHP, MySQL}
-\cvitem{}{Online Fashion which a user can order fashion items with a administration panel for administrative staff based on PHP and MySQL as the database backend. }
+\cvitem {}{Automated android timetable which synchronize across multiple people and devices with the help of the Google calender API and PhoneGap to keep in track with academic timetable changes and updates and notices.}
 
 \subsection{Singlish for Mobile -- JavaME}
-\cvitem{}{Singlish text to Unicode Sinhala text converter for low end JavaME compatible mobile phones.}
+\cvitem{}{Singlish to Unicode Sinhala converter for low end JavaME compatible mobile phones.}
+
+\subsection{SDN testbed for undergraduate education -- Final Year Project}
+\cvitem{}{Low cost Software defined networking testbed built using Raspberry Pi devices for researches and undergraduates.}
 
 \section{Referees}
 
