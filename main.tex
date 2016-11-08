@@ -25,13 +25,13 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage{multicol}
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.80]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -39,17 +39,21 @@
 %       NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Madushan} % Your first name
+\firstname{\textcolor{gray}{Madushan}} % Your first name
 \familyname{Nishantha} % Your last name
 
+%\renewcommand*{\namefont}{\fontsize{38}{38}\mdseries\upshape}
 % All information in this block is optional, comment out any lines you don't need
-\title{Curriculum Vitae}
-\address{"Samanpaya", Hangamuwa}{Ratnapura}
+\title{DevOps Engineer}
+%\address{"Samanpaya", Hangamuwa}{Ratnapura}
 \mobile{(+94) 71 5593 430}
 %%\phone{(000) 111 1112}
 %%\fax{(000) 111 1113}
 \email{j.l.madushan@gmail.com}
-%%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{\homepagesymbol github: \httplink{git.io/vXEkx} \\%
+\homepagesymbol linkedin: \httplink{goo.gl/yR9Xgm}
+}
+% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %%\extrainfo{additional information}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %%\quote{"A witty and playful quotation" - John Smith}
@@ -59,38 +63,104 @@
 \begin{document}
 
 \makecvtitle % Print the CV title
-\section{Contact Info}
-\cvitem{Full Name}{Johan Leman Madushan Nishantha Weerawardhana}
-\cvitem{Mobile}{(+94) 71 5593 430}
-\cvitem{Email}{\href{mailto:j.l.madushan@gmail.com}{j.l.madushan@gmail.com} / \href{mailto:madushan@kadira.io}{madushan@kadira.io}}
-\cvitem{Linkedin}{\href{http://www.linkedin.com/pub/madushan-nishantha/82/560/578}{www.linkedin.com/pub/madushan-nishantha/82/560/578}}
+%\section{Contact Info}
+%\cvitem{Full Name}{Johan Leman Madushan Nishantha Weerawardhana}
+%\cvitem{Mobile}{(+94) 71 5593 430}
+%\cvitem{Email}{\href{mailto:jlmadushan@gmail.com}{jlmadushan@gmail.com} / \href{mailto:madushan@kadira.io}{madushan@kadira.io}}
+%\cvitem{Linkedin}{\href{https://lk.linkedin.com/in/madushan1000}{https://lk.linkedin.com/in/madushan1000}}
+%\cvitem{Github}{\href{https://github.com/madushan1000}{https://github.com/madushan1000}}
 
-\section{About Me}
-\cvitem{}{I'm a technology enthusiasts who always seeks for new and interesting technological advancements, which lets me to get in touch with new technologies as soon as they are available. \newline
-I love teamwork and I can always adapt to such a environment at ease. \newline My career goal is to work in the cyber security sector which I think will take the best out of me. I also have experiences in Mobile and Computer software development.}
+\section{Summary}
+\cvitem{}{
+Excellent skills in building, maintaining and troubleshooting Linux based cloud application stacks on cloud services such as Google compute/container engine, Amazon ec2/lambda, Azure, or Heroku using technologies including Node.js/ES6/Babel, Meteor.js, Golang, docker, and kubernetes. \newline
+Hands on software development experiences includes building deployment automation tools such as meteor-up, or creating compiler plugin babel-plugin-react-docgen. 
+}
 
-%----------------------------------------------------------------------------------------
-%       EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\section{Professional Experiences}
 
-\section{Experience}
-\cvitem{10/2015--Present}{System Administrator at Kadira Inc. -- DevOps and System reliability Engineering}
-\cvitem{10/2014--03/2015}{Short term technical training at Atrenta Lanka (PVT) LTD -- Software Engineering Intern at GUI team(Qt)}
+\cvitem{10/2015 \newline-- Present}{\large{\textbf{System Administrator at Kadira Inc. -- DevOps and System reliability Engineering}}}
 
-\section{Education}
+\subsection{Storybook Hub\href{https://hub.getstorybook.io}{(hub.getstorybook.io)}}
+\cvitem{}{Developments and deploy automation of \href{https://getstorybook.io}{React storybook} build and hosting service Stroybook Hub.}
 
-\cventry{2011--Now}{Bachelor of Engineering (B.Sc.)}{University of Peradeniya, Sri Lanka}{}{}{Computer Engineering, Undergraduate}  % Arguments not required can be left empty
-%\cventry{2002--2010}{High School}{Sivali Central Collage}{Ratnapura, Sri Lanka}{}{Specialized in Science (Mathematics)}
+\subsection{{Improving Organizational Security at Kadira}\href{https://goo.gl/YZEJHl}{(goo.gl/YZEJHl)}}
+\cvitem{}{Designing and implementing a system to centralize backend (aws/gcloud/etc...) authentication methods (ssh/passwords/etc...) used by Kadira's various projects.}
+
+\subsection{{Meteor Up}\href{https://git.io/vXEKA}{(git.io/vXEKA)}}
+\cvitem{}{The production quality meteor deployment tool, Meteor Up, which enables developers to deploy their meteor applications to custom Linux servers. One of the maintainers of this open source project.}
+
+\subsection{{Babel Plugin React Docgen}\href{https://git.io/vXE6k}{(git.io/vXE6k)}}
+\cvitem{}{\href{https://babeljs.io/}{Babeljs} JavaScript transpiler plugin to inject PropType documents in to \href{https://facebook.github.io/react/}{React} component classes making use of the Babeljs plugin API and Node.js/ES6 \newline}
+
+\cvitem{10/2014 \newline -- 03/2015}{\large{\textbf{Short term technical training at Atrenta Lanka (PVT) LTD -- Software Engineering Intern at GUI team}}}
+\subsection{SpyGlass Qt GUI test automation using \href{https://www.froglogic.com/squish/gui-testing/}{Squish} framework}
+\cvitem{}{Created a program to filter out additional code generated while the initial test generation to make test replay work and integrating Qt GUI testing into the automated regression workflow.}
+
+\subsection{SpyGlass Qt GUI bug fixes}
+\cvitem{}{Contributions to the new SpyGlass Qt GUI using Qt framework and C++ and number of Coverity static code analyzer issue resolution on the codebase.}
+
+\clearpage
 
 \section{Technical  skills}
 %\cvitem{Advanced}{UNIX, Microsoft Windows, Android, FirefoxOS}
 %\cvitem{}{Network Programming (wsgi, C)}
 %\cvitem{}{Version Controlling (git, cvs, svn, Mercurial)}
 %\cvitem{}{Content Management Systems (Wordpress, Drupal, Joomla)}
-\cvitem{}{Cloud Management (AWS, Google Cloud) }
+\cvitem{}{Cloud Architecture, Deploy automation, Containerization, and Virtualization}
+\cvitem{}{--- AWS ec2/lambda, Google Cloud(gce, gke), Heroku, Docker, Kubernetes, VMware }
 %\cvitem{}{NetBeans, Eclipse, Code::Blocks, Microsoft Visual Studio}
-\cvitem{}{DB Administration (MongoDB)}
-\cvitem{}{Software Defined Networking (OpenFlow Controllers/Switches)}
+\cvitem{}{Database Administration} 
+\cvitem{}{--- MongoDB}
+\cvitem{}{Software Defined Networking} 
+\cvitem{}{--- Open vSwitch, OpenDaylight}
+
+\section{Programming skills}
+
+%\cvitem{Advanced}{\textsc{C/C++}, \texttt{java},  \textsc{C\#.NET}, \textsc{python}, \textsc{matlab}, \textsc{vhdl}, \textsc{shell}, \textsc{html}}
+\cvitem{Advanced}{ JavaScript/ES6, C/C++, Python}
+%\cvitem{Advanced}{C/C++, Java, JavaME, Python, MATLAB, VHDL, Verilog, Shell}
+%\cvitem{Intermediate}{\textsc{haskell}, \textsc{php}, \textsc{javascript}, \textsc{html5}, \textsc{css}, \textsc{mysql}, \textsc{perl}, \textsc{ruby}, \textsc{awk}}
+\cvitem{Intermediate}{Golang, Rust, Haskell, Common Lisp, Antlr, Perl, Assembly, Java}
+
+\section{Education}
+
+\cventry{2011--2015}{Bachelor of Engineering (B.Sc.)}{University of Peradeniya, Sri Lanka}{}{}{Computer Engineering, Graduate}  % Arguments not required can be left empty
+%\cventry{2002--2010}{High School}{Sivali Central Collage}{Ratnapura, Sri Lanka}{}{Specialized in Science (Mathematics)}
+
+\section{Other Projects}
+
+\subsection{\href{https://sdntestbed.wordpress.com/}{SDN testbed for research and education -- University Final Year Project}}
+\cvitem{}{Low cost Software defined networking testbed built using Raspberry Pi devices for researches and undergraduates.}
+
+\subsection{Virtual Memory Management System -- OS161}
+\cvitem{}{Designing and implementing a Virtual Memory Management System for educational operating system OS161}
+
+\subsection{\href{http://forum.xda-developers.com/showthread.php?t=2468230}{Porting FirefoxOS (B2G) to HTC Desire HD}}
+\cvitem{}{Solo project of Porting FirefoxOS aka Boot to Gecko (B2G), to HTC Desire HD smartphone}
+
+\subsection{\href{http://goo.gl/wXlQa1}{Contributions to Firefox for Android -- fenek}}
+\cvitem{}{Few minor code cleanups for Firefox for android}
+
+\subsection{User level thread library -- C}
+\cvitem{}{Designing and implementing of context switching library for user level C programs.}
+
+%\subsection{OCR based chemical reaction solver -- Android}
+%\cvitem{}{An android application which uses Google's tesseract OCR engine to identify chemical reactions printed on paper and return the reaction result.}
+
+%\subsection{Seven Segment Display Decoder for hexadecimal numbers -- FPGA}
+%\cvitem{}{ Designing and implementing a decoder for displaying hexadecimal numbers in seven segment displays on Altera DE2 FPGA development board using VHDL.}
+
+
+
+%----------------------------------------------------------------------------------------
+%       EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
 
 %\cvitem{Intermediate}{Raspberry Pi, Arduino, FPGA}
 %\cvitem{}{FreeBSD, Ubuntu Touch, Jolla Sailfish}
@@ -100,13 +170,7 @@ I love teamwork and I can always adapt to such a environment at ease. \newline M
 %       Programming SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Programming skills}
 
-%\cvitem{Advanced}{\textsc{C/C++}, \texttt{java},  \textsc{C\#.NET}, \textsc{python}, \textsc{matlab}, \textsc{vhdl}, \textsc{shell}, \textsc{html}}
-\cvitem{Advanced}{C/C++, Java, Python, JavaScript}
-%\cvitem{Advanced}{C/C++, Java, JavaME, Python, MATLAB, VHDL, Verilog, Shell}
-%\cvitem{Intermediate}{\textsc{haskell}, \textsc{php}, \textsc{javascript}, \textsc{html5}, \textsc{css}, \textsc{mysql}, \textsc{perl}, \textsc{ruby}, \textsc{awk}}
-\cvitem{Intermediate}{Haskell, Common Lisp, Antlr, Perl, Assembly, Rust}
 
 %\section{Educational Skills}
 
@@ -128,39 +192,6 @@ I love teamwork and I can always adapt to such a environment at ease. \newline M
 %       INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{\href{www.kadira.io}{Kadira} Projects}
-
-\subsection{\href{https://kadira.io/blog/other/improving-organizational-security-at-kadira}{Improving Organizational Security at Kadira}}
-\cvitem{}{Designing and implementing a system to centralize backend (aws/gcloud/etc...) authentication methods (ssh/passwords/etc...) used by Kadira's various projects.}
-
-\subsection{\href{https://github.com/kadirahq/meteor-up}{Meteor Up}}
-\cvitem{}{The production quality meteor deployment tool, Meteor Up, which enables developers to deploy their meteor applications to custom Linux servers. One of the maintainers of this open source project.}
-
-\section{Personal Projects}
-
-\subsection{\href{http://forum.xda-developers.com/showthread.php?t=2468230}{Porting FirefoxOS (B2G) to HTC Desire HD}}
-\cvitem{}{Solo project of Porting FirefoxOS aka Boot to Gecko (B2G), to HTC Desire HD smartphone}
-
-\subsection{\href{http://goo.gl/wXlQa1}{Contributing to Firefox for Android -- fenek}}
-\cvitem{}{Few minor code cleanups for Firefox for android}
-
-\section{Academic Projects}
-
-\subsection{\href{https://sdntestbed.wordpress.com/}{SDN testbed for research and education -- University Final Year Project}}
-\cvitem{}{Low cost Software defined networking testbed built using Raspberry Pi devices for researches and undergraduates.}
-
-\subsection{User level thread library -- C}
-\cvitem{}{Designing and implementing of context switching library for user level C programs.}
-
-\subsection{Virtual Memory Management System -- OS161}
-\cvitem{}{Designing and implementing a Virtual Memory Management System for educational operating system OS161}
-
-\subsection{OCR based chemical reaction solver -- Android}
-\cvitem{}{An android application which uses Google's tesseract OCR engine to identify chemical reactions printed on paper and return the reaction result.}
-
-\subsection{Seven Segment Display Decoder for hexadecimal numbers -- FPGA}
-\cvitem{}{ Designing and implementing a decoder for displaying hexadecimal numbers in seven segment displays on Altera DE2 FPGA development board using VHDL.}
-
 \section{Interests}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
@@ -169,7 +200,6 @@ I love teamwork and I can always adapt to such a environment at ease. \newline M
 \cvlistdoubleitem{Virtualization}{Programming Languages}
 \cvlistdoubleitem{Hiking}{Creative Writing}
 
-\section{Referees available upon request}
 %\begin{multicols}{2}
 
 %\cvitem{}{Dr. Manjula Sandirigama}
@@ -222,5 +252,3 @@ I love teamwork and I can always adapt to such a environment at ease. \newline M
 %----------------------------------------------------------------------------------------
 
 \end{document}
-
-
