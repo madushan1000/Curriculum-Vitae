@@ -1,27 +1,5 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----package config
 
-%----------------------------------------------------------------------------------------
-%       PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
@@ -35,15 +13,13 @@
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
-%----------------------------------------------------------------------------------------
-%       NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
+
+%----cv title
+
 
 \firstname{\textcolor{gray}{Madushan}} % Your first name
 \familyname{Nishantha} % Your last name
 
-%\renewcommand*{\namefont}{\fontsize{38}{38}\mdseries\upshape}
-% All information in this block is optional, comment out any lines you don't need
 \title{DevOps Engineer}
 %\address{"Samanpaya", Hangamuwa}{Ratnapura}
 \mobile{(+94) 71 5593 430}
@@ -53,12 +29,10 @@
 \extrainfo{\homepagesymbol github: \httplink{git.io/vXEkx} \\%
 \homepagesymbol linkedin: \httplink{goo.gl/yR9Xgm}
 }
-% The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-%%\extrainfo{additional information}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %%\quote{"A witty and playful quotation" - John Smith}
 
-%----------------------------------------------------------------------------------------
+%----the actual document
 
 \begin{document}
 
@@ -72,28 +46,32 @@
 
 \section{Summary}
 \cvitem{}{
-Excellent skills in building, maintaining and troubleshooting Linux based cloud application stacks on cloud services such as Google compute/container engine, Amazon ec2/lambda, Azure, or Heroku using technologies including Node.js/ES6/Babel, Meteor.js, Golang, docker, and kubernetes. \newline
+Excellent skills in building, maintaining and troubleshooting Linux based cloud application stacks on cloud services such as google compute/container engine, amazon ec2/lambda, azure, or heroku, using technologies including node.js/es6/babel, meteor.js, golang, docker, and kubernetes. \newline
 Hands on software development experiences includes building deployment automation tools such as meteor-up, or creating compiler plugin babel-plugin-react-docgen. 
 }
 
+
 \section{Professional Experiences}
 
-\cvitem{10/2015 \newline-- Present}{\large{\textbf{System Administrator at Kadira Inc. -- DevOps and System reliability Engineering}}}
 
-\subsection{Storybook Hub\href{https://hub.getstorybook.io}{(hub.getstorybook.io)}}
-\cvitem{}{Developments and deploy automation of \href{https://getstorybook.io}{React storybook} build and hosting service Stroybook Hub.}
+\cvitem{10/2015 \newline-- Present}{\large{\textbf{System administrator at Kadira inc. -- DevOps and system reliability engineering}}}
 
-\subsection{{Improving Organizational Security at Kadira}\href{https://goo.gl/YZEJHl}{(goo.gl/YZEJHl)}}
-\cvitem{}{Designing and implementing a system to centralize backend (aws/gcloud/etc...) authentication methods (ssh/passwords/etc...) used by Kadira's various projects.}
+\subsection{Storybook hub\href{https://hub.getstorybook.io}{(hub.getstorybook.io)}}
+\cvitem{}{Developments and deploy automation of \href{https://getstorybook.io}{react storybook} build and hosting service stroybook hub.}
+
+\subsection{{Improving organizational security at Kadira}\href{https://goo.gl/YZEJHl}{(goo.gl/YZEJHl)}}
+\cvitem{}{Designing and implementing a system to centralize backend (aws/gcloud/etc...) authentication methods (ssh/passwords/etc...) used by kadira's various projects.}
 
 \subsection{{Meteor Up}\href{https://git.io/vXEKA}{(git.io/vXEKA)}}
 \cvitem{}{The production quality meteor deployment tool, Meteor Up, which enables developers to deploy their meteor applications to custom Linux servers. One of the maintainers of this open source project.}
 
 \subsection{{Babel Plugin React Docgen}\href{https://git.io/vXE6k}{(git.io/vXE6k)}}
-\cvitem{}{\href{https://babeljs.io/}{Babeljs} JavaScript transpiler plugin to inject PropType documents in to \href{https://facebook.github.io/react/}{React} component classes making use of the Babeljs plugin API and Node.js/ES6 \newline}
+\cvitem{}{\href{https://babeljs.io/}{Babeljs} javascript transpiler plugin to inject proptype documents in to \href{https://facebook.github.io/react/}{react} component classes making use of the babeljs plugin API and node.js/ES6 \newline}
 
-\cvitem{10/2014 \newline -- 03/2015}{\large{\textbf{Short term technical training at Atrenta Lanka (PVT) LTD -- Software Engineering Intern at GUI team}}}
-\subsection{SpyGlass Qt GUI test automation using \href{https://www.froglogic.com/squish/gui-testing/}{Squish} framework}
+
+\cvitem{10/2014 \newline -- 03/2015}{\large{\textbf{Short term technical training at Atrenta Lanka (PVT) LTD -- Software engineering intern at GUI team}}}
+
+\subsection{SpyGlass Qt GUI test automation using \href{https://www.froglogic.com/squish/gui-testing/}{squish} framework}
 \cvitem{}{Created a program to filter out additional code generated while the initial test generation to make test replay work and integrating Qt GUI testing into the automated regression workflow.}
 
 \subsection{SpyGlass Qt GUI bug fixes}
@@ -102,24 +80,17 @@ Hands on software development experiences includes building deployment automatio
 \clearpage
 
 \section{Technical  skills}
-%\cvitem{Advanced}{UNIX, Microsoft Windows, Android, FirefoxOS}
-%\cvitem{}{Network Programming (wsgi, C)}
-%\cvitem{}{Version Controlling (git, cvs, svn, Mercurial)}
-%\cvitem{}{Content Management Systems (Wordpress, Drupal, Joomla)}
-\cvitem{}{Cloud Architecture, Deploy automation, Containerization, and Virtualization}
-\cvitem{}{--- AWS ec2/lambda, Google Cloud(gce, gke), Heroku, Docker, Kubernetes, VMware }
-%\cvitem{}{NetBeans, Eclipse, Code::Blocks, Microsoft Visual Studio}
-\cvitem{}{Database Administration} 
+
+\cvitem{}{Cloud architecture, deploy automation, containerization, and virtualization}
+\cvitem{}{--- AWS ec2/lambda, gcloud(gce, gke), heroku, docker, kubernetes, VMware }
+\cvitem{}{Database administration} 
 \cvitem{}{--- MongoDB}
-\cvitem{}{Software Defined Networking} 
+\cvitem{}{Software defined networking} 
 \cvitem{}{--- Open vSwitch, OpenDaylight}
 
 \section{Programming skills}
 
-%\cvitem{Advanced}{\textsc{C/C++}, \texttt{java},  \textsc{C\#.NET}, \textsc{python}, \textsc{matlab}, \textsc{vhdl}, \textsc{shell}, \textsc{html}}
 \cvitem{Advanced}{ JavaScript/ES6, C/C++, Python}
-%\cvitem{Advanced}{C/C++, Java, JavaME, Python, MATLAB, VHDL, Verilog, Shell}
-%\cvitem{Intermediate}{\textsc{haskell}, \textsc{php}, \textsc{javascript}, \textsc{html5}, \textsc{css}, \textsc{mysql}, \textsc{perl}, \textsc{ruby}, \textsc{awk}}
 \cvitem{Intermediate}{Golang, Rust, Haskell, Common Lisp, Antlr, Perl, Assembly, Java}
 
 \section{Education}
@@ -130,16 +101,16 @@ Hands on software development experiences includes building deployment automatio
 \section{Other Projects}
 
 \subsection{\href{https://sdntestbed.wordpress.com/}{SDN testbed for research and education -- University Final Year Project}}
-\cvitem{}{Low cost Software defined networking testbed built using Raspberry Pi devices for researches and undergraduates.}
+\cvitem{}{Low cost software defined networking testbed built using raspberry pi devices for researches and undergraduates.}
 
-\subsection{Virtual Memory Management System -- OS161}
-\cvitem{}{Designing and implementing a Virtual Memory Management System for educational operating system OS161}
+\subsection{Virtual memory management system -- OS161}
+\cvitem{}{Designing and implementing a virtual memory management system for educational operating system OS161}
 
-\subsection{\href{http://forum.xda-developers.com/showthread.php?t=2468230}{Porting FirefoxOS (B2G) to HTC Desire HD}}
-\cvitem{}{Solo project of Porting FirefoxOS aka Boot to Gecko (B2G), to HTC Desire HD smartphone}
+\subsection{\href{http://forum.xda-developers.com/showthread.php?t=2468230}{Porting Firefox OS (B2G) to HTC Desire HD}}
+\cvitem{}{Solo project of porting Firefox OS aka Boot to Gecko (B2G), to HTC Desire HD smartphone}
 
-\subsection{\href{http://goo.gl/wXlQa1}{Contributions to Firefox for Android -- fenek}}
-\cvitem{}{Few minor code cleanups for Firefox for android}
+\subsection{\href{http://goo.gl/wXlQa1}{Contributions to Firefox for android -- fenek}}
+\cvitem{}{Code cleanups and improvements to Firefox for android}
 
 \subsection{User level thread library -- C}
 \cvitem{}{Designing and implementing of context switching library for user level C programs.}
@@ -152,9 +123,6 @@ Hands on software development experiences includes building deployment automatio
 
 
 
-%----------------------------------------------------------------------------------------
-%       EDUCATION SECTION
-%----------------------------------------------------------------------------------------
 
 
 
@@ -162,43 +130,18 @@ Hands on software development experiences includes building deployment automatio
 
 
 
-%\cvitem{Intermediate}{Raspberry Pi, Arduino, FPGA}
-%\cvitem{}{FreeBSD, Ubuntu Touch, Jolla Sailfish}
-%\cvitem{}{\LaTeX, MS Office}
-
-%----------------------------------------------------------------------------------------
-%       Programming SKILLS SECTION
-%----------------------------------------------------------------------------------------
 
 
-
-%\section{Educational Skills}
-
-%\cvitem{}
-%----------------------------------------------------------------------------------------
-%       COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%       LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{Languages}
-
-%\cvitemwithcomment{Sinhala}{Mothertongue}{Creative Writing}
-%\cvitemwithcomment{English}{Intermediate}{Conversationally fluent}
-
-%----------------------------------------------------------------------------------------
 %       INTERESTS SECTION
-%----------------------------------------------------------------------------------------
 
 \section{Interests}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
-\cvlistdoubleitem{Operating Systems}{Embedded Designing}
-\cvlistdoubleitem{Virtualization}{Programming Languages}
-\cvlistdoubleitem{Hiking}{Creative Writing}
+\cvlistdoubleitem{Operating systems}{Embedded designing}
+\cvlistdoubleitem{Virtualization}{Programming languages}
+\cvlistdoubleitem{Network security}{Reverse engineering}
+\cvlistdoubleitem{Hiking}{Creative writing}
 
 %\begin{multicols}{2}
 
